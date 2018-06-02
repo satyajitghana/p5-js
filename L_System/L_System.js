@@ -5,6 +5,7 @@ var rule = [];
 var len = 150;
 var angle;
 var alpha = 255;
+var input;
 
 rule[0] = {
   a: "F",
@@ -76,6 +77,8 @@ function setup() {
   turtle();
   button = createButton("Generate");
   button.mousePressed(generate);
+  input = createInput();
+  input.position(button.x+button.width, height+10);
 }
 
 function draw() {
